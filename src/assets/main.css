@@ -1,0 +1,50 @@
+* {
+  font-family: 'Inter var', sans-serif;
+}
+body {
+  margin: 0;
+}
+:root {
+  --primary-color: #613deb;
+  --secondary-color: #fb923c;
+  --blue: #51bbcb;
+  --white: #ffffff;
+  --headlineGrey: #606060;
+  --tableGrey: #bfbfbf;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--headlineGrey);
+}
+h1 {
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1280px) {
+  .dropdownMenu {
+    right: 0;
+    font-size: 14px;
+  }
+  .router-link-active:after {
+    content: none !important;
+  }
+  .user {
+    display: block;
+  }
+  .dropdown-content {
+    display: block !important;
+    position: relative !important;
+  }
+  .dropdownIcon {
+    display: none;
+  }
+}
