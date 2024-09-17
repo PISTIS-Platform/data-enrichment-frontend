@@ -5,20 +5,13 @@
 
 Make sure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/) (Ensure it's up to date)
+- [Node.js](https://nodejs.org/)
 - [pnpm](https://pnpm.io/) (If you don’t have pnpm installed, you can install it globally by running: `npm install -g pnpm`)
 
 ## Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
-   ```
-2. Navigate into the project directory:
-    ```bash
-    cd your-repository
-    ```
+1. Clone the repository
+2. Navigate into the project directory
 3. Install dependencies using pnpm:
    ```bash
     pnpm i
