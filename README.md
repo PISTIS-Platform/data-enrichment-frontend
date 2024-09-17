@@ -1,6 +1,5 @@
 # Data Enrichment Frontend
 
-A brief description of your project goes here.
 
 ## Prerequisites
 
@@ -27,9 +26,9 @@ Make sure you have the following installed on your machine:
 ## Running the app
 To start the app locally, run the following command:
 ```bash
-    pnpm dev
+pnpm dev
 ```
 This will fire up the app, and you can view it in your browser at:
 ```bash
-    http://localhost:8080
+http://localhost:8080
 ```
