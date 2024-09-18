@@ -5,6 +5,7 @@ import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import router from './router'
 import App from './App.vue'
+import Auth from "@/auth"
 import AuthStorePlugin from './plugins/authStore'
 import VueClickAway from 'vue3-click-away'
 import axios from 'axios'
@@ -54,6 +55,8 @@ const renderApp = () => {
   app.use(router, bootstrap)
   app.component('v-select', vSelect)
   app.component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+
+  app.config.globalProperties.$auth = Auth;
 }
 
 // renderApp()
