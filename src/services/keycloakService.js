@@ -3,8 +3,8 @@ import Keycloak from 'keycloak-js'
 const options = {
   url: import.meta.env.VITE_KEYCLOAK_URL,
   clientId: import.meta.env.VITE_KEYCLOAK_CLIENT_ID,
-  realm: import.meta.env.VITE_KEYCLOAK_REALM
-  // secret: import.meta.env.VITE_KEYCLOAK_CLIENT_SECRET
+  realm: import.meta.env.VITE_KEYCLOAK_REALM,
+  //secret: import.meta.env.VITE_KEYCLOAK_CLIENT_SECRET
 }
 
 const keycloak = new Keycloak(options)
@@ -18,7 +18,7 @@ let store = null
  */
 async function init(onInitCallback) {
   try {
-    authenticated = await keycloak.init({ onLoad: 'login-required' })
+    authenticated = await keycloak.init({ onLoad: 'login-required', enableLogging: true })
     onInitCallback()
   } catch (error) {
     console.error('Keycloak init failed')

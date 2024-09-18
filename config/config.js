@@ -39,15 +39,16 @@ const config = {
   authentication: {
     keycloak: {
       realm: 'PISTIS',
-      clientId: 'pistis-test-only',
+      //clientId: 'pistis-test-only',
+      clientId: 'enrichment-ui-test',
       url: 'https://auth.pistis-market.eu/',
-      clientSecret: 'DYuAlXn8kC1SVzFiYgApfjcodZhdxreL',
+      //clientSecret: 'DYuAlXn8kC1SVzFiYgApfjcodZhdxreL',
       // TODO: Do we need to include these properties? They seem to be default values that never change #2763
-      'ssl-required': 'external',
-      'public-client': true,
-      'verify-token-audience': true,
-      'use-resource-role-mappings': true,
-      'confidential-port': 0
+      //'ssl-required': 'external',
+      //'public-client': true,
+      //'verify-token-audience': true,
+      //'use-resource-role-mappings': true,
+      //'confidential-port': 0
     }
   },
   navigation: [
